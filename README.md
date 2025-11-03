@@ -1,4 +1,4 @@
-# 🎯 123B1F048_DAA_LAB_ASSIGNMENTS_KINJAL_HEDA  
+# 🎯 123B1F046_DAA_LAB_ASSIGNMENTS_SALONI_KHANDELWAL
 
 ## 💻 Design and Analysis of Algorithms Laboratory Assignments (BIT25PC04)
 
