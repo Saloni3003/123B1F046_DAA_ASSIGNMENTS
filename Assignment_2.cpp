@@ -17,7 +17,7 @@ struct Movie {
     string title;
     double rating;
     int year;
-    long watchTime; // popularity measure (in thousands of views)
+    long watchTime; 
 };
 
 // ------------------- Partition Function -------------------
@@ -29,7 +29,7 @@ int partition(vector<Movie>& movies, int low, int high, const string& key) {
         bool condition = false;
 
         if (key == "rating")
-            condition = movies[j].rating < pivot.rating; // ascending order
+            condition = movies[j].rating < pivot.rating; 
         else if (key == "year")
             condition = movies[j].year < pivot.year;
         else if (key == "watch")
@@ -94,11 +94,11 @@ int main() {
     vector<string> keys = {"year", "rating", "watch"};
 
     for (const auto& key : keys) {
-        vector<Movie> temp = movies; // copy for each sort
+        vector<Movie> temp = movies; 
         auto start = high_resolution_clock::now();
         quickSort(temp, 0, temp.size() - 1, key);
         auto end = high_resolution_clock::now();
-        double timeTaken = duration_cast<nanoseconds>(end - start).count() / 1e6; // in ms
+        double timeTaken = duration_cast<nanoseconds>(end - start).count() / 1e6; 
         displayMovies(temp, key, timeTaken);
     }
 
