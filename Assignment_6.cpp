@@ -2,6 +2,7 @@
 // Program: Disaster Relief Resource Allocation using Knapsack Optimization
 // Author: Saloni Khandelwal
 // Roll No: 123B1F046
+// Date: 23/09/2025
 // ============================================================================
 
 #include <iostream>
